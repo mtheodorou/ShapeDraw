@@ -1,4 +1,5 @@
-package com.company;
+import shapes.Circle;
+import shapes.Rectangle;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -11,7 +12,7 @@ public class Drawing extends Canvas{
     Color cl=new Color(0x992266);
     Color c2=new Color(0x64ff60);
     private Circle c=new Circle(p,cl,200);
-    private Rectangle r=new Rectangle(p2,c2,200,200);
+    private shapes.Rectangle r=new Rectangle(p2,c2,200,200);
     private Frame f;
 
     public Drawing(){
