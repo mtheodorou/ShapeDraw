@@ -1,15 +1,13 @@
+package com.company;
 
 import java.awt.*;
 
-public class Circle {
+public class Circle extends Shape {
     private int rad;
-    private Point pos;
-    private  Color col;
 
     public  Circle(Point initPos, Color col, int radius){
+        super(initPos, col);
         rad=radius;
-        pos=initPos;
-        this.col=col;
     }
 
     public void draw(Graphics g) {
