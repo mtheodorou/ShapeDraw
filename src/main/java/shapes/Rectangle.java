@@ -1,8 +1,9 @@
 package shapes;
+import actions.draw;
 
 import java.awt.*;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape implements draw{
     private int width;
     private int height;
 
@@ -12,6 +13,7 @@ public class Rectangle extends Shape{
         this.height=height;
     }
 
+    @Override
     public void draw(Graphics g)
     {
         g.setColor(col);
